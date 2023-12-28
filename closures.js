@@ -24,7 +24,7 @@ function outerFunction() {
 
 // another example
 function x(){
-    var a = 10;
+    let a = 10;
     function y(){
         console.log(a);
     }
@@ -32,5 +32,5 @@ function x(){
     return y;
 }
 
-var res = x();
+let res = x();
 res();

@@ -65,7 +65,7 @@ const checkAnagram3 = (str1, str2) =>
     for (i = 0; i < str1.length && i < str2.length;
          i++) {
         count1[str1[i].charCodeAt(0)]++;
-        count2[str1[i].charCodeAt(0)]++;
+        count2[str2[i].charCodeAt(0)]++;
     }
 
     // If both strings are of different length.

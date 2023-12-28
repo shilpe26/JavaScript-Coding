@@ -3,9 +3,8 @@
 const stringPallindrome = (str) => {
     let i = 0;
     let j = str.length - 1;
-    const tempArr = [...str];
     while(i < j){
-        if(tempArr[i] !== tempArr[j]){
+        if(str[i] !== str[j]){
             return false;
         }
         i++;
