@@ -91,7 +91,7 @@ console.log(sum);
 /* ----------------------------------------------------------------------------------------- */
 
 /* QUES 6 */
-/* Given an array. Write a function to get the sum of all elements which are greater than 50. */
+/* Given an array. Write a function to get the multiplication of all elements which are even. */
 
 const arr5 = [1, 2, 3, 7, 5, 6, 8, 9];
 
