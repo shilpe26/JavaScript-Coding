@@ -1,3 +1,23 @@
+/*
+Implement a function called, areThereDuplicates which accepts a 
+variable number of arguments, and checks whether there are any duplicates 
+among the arguments passed in.  You can solve this using the frequency 
+counter pattern OR the multiple pointers pattern.
+
+Examples:
+areThereDuplicates(1, 2, 3) // false
+areThereDuplicates(1, 2, 2) // true 
+areThereDuplicates('a', 'b', 'c', 'a') // true 
+
+Restrictions:
+Time - O(n)
+Space - O(n)
+
+Bonus:
+Time - O(n log n)
+Space - O(1)
+*/
+
 // Using Frequency Counter
 function areThereDuplicates1() {
     let collection = {}
@@ -9,6 +29,9 @@ function areThereDuplicates1() {
     }
     return false;
 }
+//Note: arguments is a keyword that gives us an object of all the parameters
+//passed to the function, where keys are index and values are parameters passed.
+//That's why we use 'in' operator with arguments. 
 
 // Using Multiple Pointers
 function areThereDuplicates2(...args) {
